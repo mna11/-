@@ -11,10 +11,10 @@ void tree_func() {
 		for (int i = 0; i <= back; i++) {
 			printf("%d ", tree[i]);
 		}
-		printf(" [0 : %d, 1 : %d] \n", cnt0, cnt1);
 		if (tree[back] == 2) {
 			cnt0++;
 			cnt1++;
+			printf(" [0 : %d, 1 : %d] \n", cnt0, cnt1);
 			if (back == 0) return;
 			if (tree[back - 1] - 1 == tree[back])
 				tree[back] = tree[back - 1] - 2;
@@ -31,8 +31,12 @@ void tree_func() {
 			}
 		}
 		else if (tree[back] == 1) {
-			if (back == 1) break;
+			if (back == 1) {
+				printf(" [0 : %d, 1 : %d] \n", cnt0, cnt1);
+				break;
+			}
 			cnt1++;
+			printf(" [0 : %d, 1 : %d] \n", cnt0, cnt1);
 			back--;
 			if (tree[back - 1] - 1 == tree[back]) {
 				tree[back] = tree[back - 1] - 2;
