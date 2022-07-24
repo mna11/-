@@ -1,4 +1,7 @@
 # -
+[입력 순서 : Test case 수 -> N 값]
+
+
 Fib(n) = Fib(n-1) + Fib(n-2) 이를 트리구조로 나타내면 아래 사진과 같다. 
 ![Fac(5)](https://user-images.githubusercontent.com/66415336/180632250-78f8ac34-be11-4a03-8291-e3c028243546.png)
 이 코드는 이를 아래와 같이 순서대로 출력한다.
